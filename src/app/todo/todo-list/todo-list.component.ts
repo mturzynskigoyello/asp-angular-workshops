@@ -50,4 +50,8 @@ export class TodoListComponent implements OnInit {
       this.selectedItem = item;
     }
   }
+
+  onItemCreated(item: TodoItem) {
+    this.items.push(item);
+  }
 }
