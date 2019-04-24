@@ -1,3 +1,10 @@
-<p>
-  todo-list works!
-</p>
+<div>
+  <mat-action-list>
+    <button *ngFor="let item of items" 
+      mat-list-item role="listitem" 
+      (click)="selectItem(item)">{{item.name}}</button>
+  </mat-action-list>
+  
+  <app-todo-item [item]="selectedItem"></app-todo-item>
+
+</div>
