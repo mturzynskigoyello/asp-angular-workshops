@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatToolbarModule } from '@angular/material'
+import { PlaygroundModule } from './playground/playground.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,9 @@ import { MatToolbarModule } from '@angular/material'
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
-    MatToolbarModule
+    MatToolbarModule,
+
+    PlaygroundModule
   ],
   providers: [],
   bootstrap: [AppComponent]
